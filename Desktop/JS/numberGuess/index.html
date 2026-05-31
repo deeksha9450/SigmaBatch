@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <style>
+      /* ===== RESET ===== */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* ===== BODY ===== */
+      body {
+        background-image: url("Images/hand.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        overflow: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+
+        /* centers everything vertically and horizontally */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px; /* equal space between ALL elements */
+      }
+
+      /* ===== HEADING ===== */
+      h1 {
+        background-color: rgba(15, 210, 224, 0.2);
+        backdrop-filter: blur(8px);
+        padding: 12px 24px;
+        border-radius: 12px;
+        color: black;
+        font-size: 42px;
+        text-align: center;
+      }
+
+      /* ===== RESULT ===== */
+      h2 {
+        color: black;
+        font-size: 28px;
+        text-align: center;
+        background-color: rgba(186, 186, 186, 0.2);
+        backdrop-filter: blur(8px);
+        padding: 10px 14px;
+        border-radius: 10px;
+      }
+
+      #result {
+        color: rgb(211, 188, 10);
+      }
+
+      /* ===== INPUT ===== */
+      #input {
+        background-color: rgb(175, 182, 185);
+        font-family: Arial, Helvetica, sans-serif;
+        border: 4px solid black;
+        color: black;
+        font-weight: bolder;
+        font-size: 20px;
+        border-radius: 23px;
+        padding: 10px 25px;
+        cursor: pointer;
+        text-align: center;
+        transition: all 0.3s ease;
+        width: 280px;
+      }
+
+      #input:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(24, 219, 209, 0.2);
+        opacity: 0.9;
+      }
+
+      /* ===== BUTTON ===== */
+      #guess {
+        background-color: rgb(175, 182, 185);
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 3px solid black;
+        font-weight: bolder;
+        font-size: 20px;
+        border-radius: 20px;
+        padding: 7px 15px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 150px;
+      }
+
+      #guess:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(19, 237, 226, 0.2);
+        opacity: 0.9;
+      }
+
+      /* ===== CLICKS ===== */
+      h3 {
+        font-size: 20px;
+        background-color: rgba(116, 160, 161, 0.878);
+        backdrop-filter: blur(8px);
+        padding: 12px 24px;
+        border-radius: 12px;
+      }
+
+      #clicks {
+        color: rgb(255, 12, 7);
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Guess the number between 0 to 100</h1>
+    <h2>Result: <span id="result"></span></h2>
+    <input type="number" id="input" placeholder="Enter a number" />
+    <button id="guess">Guess</button>
+    <h3>Total clicks: <span id="clicks">0</span></h3>
+
+    <script src="numberGuess.js" defer></script>
+  </body>
+</html>
