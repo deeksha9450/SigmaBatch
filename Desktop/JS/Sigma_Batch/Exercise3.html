@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise3: Multicolor Website</title>
+    <style>
+      :root {
+        --color: black;
+        --primary-color: rgb(181, 181, 244);
+      }
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        background-color: var(--primary-color);
+      }
+      nav {
+        background-color: pink;
+        color: var(--color);
+        padding: 20px;
+      }
+      ul li {
+        display: inline;
+        margin: 10px 10px 10px 10px;
+        padding: 10px 10px 10px 50px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body class="page">
+    <!-- Create a multicolor website which can change color using CSS Variables -->
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>Contacts</li>
+        <li>FAQ</li>
+        <li>About Us</li>
+      </ul>
+    </nav>
+  </body>
+</html>
