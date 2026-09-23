@@ -1,0 +1,50 @@
+*{
+  color: white;
+  height: 100%;
+  font-weight: bold;
+   font-size: 20px;
+  background-color: grey;
+}
+ul,li,#list {
+  display:flex;
+  background-color: rgb(110, 201, 201);
+  width: 100%;
+  height: 40px;
+  position: sticky;
+  top:0px;
+}
+.image{
+   position: fixed;
+  bottom:50px;
+  right:50px;
+  height:50px;
+  width:50px;
+  background-color: none;
+  
+}
+
+footer{
+  background-color: bisque;
+  border: 1px solid grey;
+  color:brown;
+  padding: 5px;
+  width: 100%;
+  height: 60px;
+  margin: 0px 0px 200px 0px;
+}
+.container{
+  display:flex;
+}
+section{
+  background-color: pink;
+  color: blue
+}
+#left, #right{
+border:2px solid grey;
+background-color: pink;
+width: 200px;
+height: 200px;
+margin: 150px;
+padding: 100px;
+
+}
